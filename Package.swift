@@ -11,7 +11,7 @@ let swiftSettings: [SwiftSetting] = [.define("WEB_AUTH_PLATFORM", .when(platform
 
 let package = Package(
     name: "Auth0",
-    platforms: [.iOS(.v12), .macOS(.v10_15), .tvOS(.v12), .watchOS("6.2")],
+    platforms: [.iOS(.v13), .macOS(.v10_15), .tvOS(.v12), .watchOS("6.2")],
     products: [.library(name: "Auth0", targets: ["Auth0"])],
     dependencies: [
         .package(name: "SimpleKeychain", url: "https://github.com/auth0/SimpleKeychain.git", .upToNextMajor(from: "1.0.0")),
